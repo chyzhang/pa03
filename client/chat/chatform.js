@@ -22,7 +22,7 @@ Template.Chatform.events({
 		console.log(JSON.stringify(this));
 
             
-        Chat.insert({uid:Meteor.userId(), username:Meteor.user().emails[0].address, nickname:nickname, time:new Date(), message:message});
+        Chat.insert({uid:Meteor.userId(), nickname:nickname, time:new Date(), message:message});
 
 		Router.go('/Chat');
 	

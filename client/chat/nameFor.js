@@ -1,5 +1,5 @@
-Template.Chat.helpers({
-	Chat: function(){return Chat.find({}, {sort:{time: -1}, limit:10});}
+Template.nameFor.helpers({
+	Chat: function(){return Chat.find({}, {sort:{name: -1}, limit:10});}
 })
 
 Template.iChat.helpers({
