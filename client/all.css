@@ -9,24 +9,7 @@ body {
     color: #ddd;
 }
 
-a {
-	color: #aaa;
-	text-decoration: none;
-	-webkit-transition: color 0.3s ease;
-	-moz-transition: color 0.3s ease;
-	-ms-transition: color 0.3s ease;
-	-o-transition: color 0.3s ease;
-	transition: color 0.3s ease;
-}
 
-a:hover, a:focus {
-	color: rgb(255,255,255);
-}
-
-li {
-	list-style:none;
-
-}
 
 .main-shadow-box {
 	width:100%;
