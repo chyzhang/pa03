@@ -1,0 +1,40 @@
+<template name="listenAndSearch">
+  <div>
+    <a href="#" id="start_button">Dictate</a>
+  </div>
+ 
+  <div id="results" class="bg-info">
+	  <h1>Search by "game level" "hero" or "lobby types" </h1>
+    <span id="final_span" class="final"></span>
+    <span id="interim_span" class="interim"></span>
+  </div>
+    <div>
+    <div>
+    <div class="nabtn-title">Skills</div><div id="filterskill-all" class="nabtn nabtn-left" onclick="FilterNav('skill','all')">All Skills</div><div class="nabtn" id="filterskill-pro" style="color:#9c3627;" onclick="FilterNav('skill','pro')">Tournament</div><div class="nabtn" id="filterskill-vh" style="color:#f0a868;" onclick="FilterNav('skill','vh')">Very High</div><div class="nabtn" id="filterskill-h" style="color:#E6E8FA;" onclick="FilterNav('skill','h')">High</div><div class="nabtn nabtn-right" id="filterskill-n"  style="color:#cccccc;" onclick="FilterNav('skill','n')">Normal</div><br><br><div class="nabtn-title">Lobby Types</div><div class="nabtn nabtn-left" id="filterladder-all" style="" onclick="FilterNav('ladder','all')">All</div><div class="nabtn" id="filterladder-yes" style="color:#f0a868;" onclick="FilterNav('ladder','y')">Ranked</div><div class="nabtn " id="filterladder-no" style="" onclick="FilterNav('ladder','n')">Normal</div><div class="nabtn nabtn-right" id="filterladder-solo" style="position: relative;width:70px;" onclick="FilterNav('ladder','solo')">Solo Match</div></div>
+    <table class="sortable table-list" style="width: 95%;margin:20px auto 20px auto;">
+
+            <thead>
+                <th style="width:30%;">Hero</th>
+                <th style="width:30%;">Win Rate</th>
+                <th style="width:40%;">Matches Played</th>
+            </thead>
+        <tbody>
+        <tr onclick="DoNav('/hero/detail/antimage')" style="cursor: pointer;">
+        <td style="width: 30%">
+            <img class="hero-img-list" src="http://cdn.dota2.com/apps/dota2/images/heroes/antimage_hphover.png">
+            <span class="hero-name-list">Anti-Mage</span>
+        </td>
+        <td style="width: 40%">
+        <div style="height: 10px">45.28%</div>
+        <div class="segment segment-green" style="width:45.2807789409%;"></div>
+        </td>
+        <td style="width: 30%">
+            <div style="height: 10px">4,610,157</div>
+            <div class="segment segment-gold" style="width:40.4206781289%;">
+            </div>
+        </td>
+        </tr>
+        </tbody>
+    </table>
+    </div>
+</template>

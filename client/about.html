@@ -1,0 +1,52 @@
+<template name="about">
+<h1>About</h1>
+<div id="words" class ="container col-md-6"> 
+<h3 id='ArcanaIncludes' class='FG_Day3_Section_E_3 AlignCenter IceGlow'>
+About:</h3>
+<h4 id='ArcanaDetailsTitle' class='FG_Day3_Section_E_4 IceGlow PupColor'>
+I am Chi Zhang, a great fan of the game dota2.</h4>
+<div id='ArcanaDetails' class='FG_Day3_Section_E_5 IceGlowNoCaps'>
+<ul>
+    <li class='UpperCase ListBig'>Basically, this app is for the dota2 players, there will be a forum for people communicate with each other.</li>
+    <li class='UpperCase ListBig'>People can search ant information for this game with their voice by using the  professional terms or decribing it.</li>
+    <hr/>
+Here is our team:
+<table class="table table-condensed">
+	<thead>
+		<tr><th>Name</th><th>Email</th></tr>
+	</thead>
+	<tbody>
+{{#each team}}
+  {{> teamrow}}
+{{/each}}
+	</tbody>
+</table>
+</ul>
+</div>
+    </div>
+<div id ="arcane" class = "container col-md-6">
+<video id='Arcana_Video' class='FG_Day3_Section_E_6' preload autoplay loop poster='http://cdn.dota2.com/apps/dota2/videos/newbloom2015/day3_cm_arcana.jpg'>
+    <source src='http://cdn.dota2.com/apps/dota2/videos/newbloom2015/day3_cm_arcana.webm' type='video/webm'/>
+    <source src='http://cdn.dota2.com/apps/dota2/videos/newbloom2015/day3_cm_arcana.mp4' type='video/mp4'/>
+    <img src='http://cdn.dota2.com/apps/dota2/videos/newbloom2015/day3_cm_arcana.jpg'/>
+</video>
+    </div>
+    
+
+
+
+    
+<div>
+    
+     
+</div>
+
+</template>
+
+
+<template name="teamrow">
+   <tr>
+   	  <td>{{name}}</td>
+   	  <td>{{email}}</td>
+   </tr>
+</template>
