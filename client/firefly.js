@@ -63,7 +63,7 @@ FireflyModel.prototype.update = function(dt){
 theModel = new FireflyModel();
 function renewModel(){
 theModel = new FireflyModel();
-for(var i=0;i<50;i++){
+for(var i=0;i<1000;i++){
     var myvx=Math.random()*10-5;
     var myvy=(Math.random()-0.5)*10;
     theModel.addFirefly(new Firefly(50,50,1,"black",myvx,myvy))
