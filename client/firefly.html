@@ -1,13 +1,58 @@
 <template name= "firefly">
+
+
+
+
+<div id="wordsss" class ="container col-md-3"> 
+
+     <table class="table table-hover">
+	<thead>
+		<tr><th>ball caught</th></tr>
+	</thead>
+	<tbody>
+		{{#each Gamer1}}
+			{{> iGamer1}}
+		{{/each}}
+	</tbody>
+    <ul>
+    <img id="dotata" src="/images/dotata.jpg" alt="ta" width="284" height="177">
+  </ul>  
+</table>
+    
+    
+</div>
+<div  class ="container col-md-3">    
+
 <li>Fire game</li>
     
-<button id="startgame">Start</button><br/>
-<img id="dotata" src="/images/dotata.jpg" alt="ta" width="284" height="177">
-<canvas id="gameboard" width = "500" height = "1000">
-Get a better browser!!!!    
+<button class="nabtn1 active nabtn1-left" id="startgame">Start</button><br/>
+<button class="nabtn1 active nabtn1-left" id="pause">Pause</button><br/>
+<button class="nabtn1 active nabtn1-left" id="restart">Restart</button><br/>
+      <h1>How many balls can you get???</h1>
+    <h2 id="aaaaa">{{daysLeft}} seconds left!!!</h2>
+    <h3 id="bbbbb">You have caught {{dead}}/1000</h3>
+    <button class="nabtn1 active nabtn1-left" id="Save">Save</button><br/>
+    </div>
+    
+<div > 
+
+<canvas id="gameboard" width = "750" height = "550">    
     
 </canvas>
+    </div>
 
 
 
+</template>
+
+
+<template name="iGamer1">
+	<tr>
+        <td>{{ball}}</td>
+		<td>
+			{{#if isTheGamer1}} 
+			<span class="glyphicon glyphicon-remove jbsapp-delete-icon" aria-hidden="true"></span>
+			{{/if}}
+		</td>
+	</tr>
 </template>
